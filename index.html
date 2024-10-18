@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+
+        <div class="card">
+            <div class="front">
+                <img src="card-chip.png" class="chip" alt="">
+                <div>
+                    <span class="label">Número de Tarjeta</span>
+                    <span id="numerotarjeta">#### #### #### ####</span>
+                </div>
+                <div class="row">
+                    <div>
+                        <span class="label">Nombre completo</span>
+                        <span id="nombrecompleto"></span>
+                    </div>
+
+                    <div>
+                        <span class="label">Fecha de Expiración</span>
+                        <span id="numerotarjeta"></span>
+                    </div>
+                </div>
+                
+            </div>
+            
+           
+
+            <div class="back">
+                <div class="band"></div>
+            </div>
+            <div class="info">
+                <div class="firma"></div>
+                <div class="ccv"><span id="idccv"></span></div>
+            </div>
+        </div>
+        <button class="modal" onclick="toogleFormulario()">+</button>
+
+        <form id="form">
+            <div>
+                <label>Nombre Completo</label>
+                <input type="text" id="inputnombrecompleto">
+            </div>
+            <div>
+                <label>Número de tarjeta</label>
+                <input type="text" id="inputnumerotarjeta">
+            </div>
+            <div class="back">
+                <label>Expiración</label>
+                <input type="month" id="expiracion">
+            </div>
+            <div class="back">
+                <label>CCV</label>
+                <input type="number" id="ccv">
+            </div>
+            <input type="submit" value="submit">
+        </form>
+
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>
