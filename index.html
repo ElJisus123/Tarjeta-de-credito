@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarjeta De Credito</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -13,7 +13,7 @@
 
         <div class="card">
             <div class="front">
-                <img src="card-chip.png" class="chip" alt="">
+                <img src="card-chip.png" class="chip" alt="chip">
                 <div>
                     <span class="label">Número de Tarjeta</span>
                     <span id="numerotarjeta">#### #### #### ####</span>
@@ -21,45 +21,42 @@
                 <div class="row">
                     <div>
                         <span class="label">Nombre completo</span>
-                        <span id="nombrecompleto"></span>
+                        <span id="nombrecompleto">NOMBRE COMPLETO</span>
                     </div>
 
                     <div>
                         <span class="label">Fecha de Expiración</span>
-                        <span id="numerotarjeta"></span>
+                        <span id="expiraciontarjeta">MM/YY</span>
                     </div>
                 </div>
-                
             </div>
-            
-           
 
             <div class="back">
                 <div class="band"></div>
-            </div>
-            <div class="info">
-                <div class="firma"></div>
-                <div class="ccv"><span id="idccv"></span></div>
+                <div class="info">
+                    <div class="firma"></div>
+                    <div class="ccv"><span id="idccv">###</span></div>
+                </div>
             </div>
         </div>
         <button class="modal" onclick="toogleFormulario()">+</button>
 
-        <form id="form">
+        <form id="form" class="hidden">
             <div>
                 <label>Nombre Completo</label>
                 <input type="text" id="inputnombrecompleto">
             </div>
             <div>
                 <label>Número de tarjeta</label>
-                <input type="text" id="inputnumerotarjeta">
+                <input type="text" id="inputnumerotarjeta" maxlength="19">
             </div>
-            <div class="back">
+            <div>
                 <label>Expiración</label>
                 <input type="month" id="expiracion">
             </div>
-            <div class="back">
+            <div>
                 <label>CCV</label>
-                <input type="number" id="ccv">
+                <input type="text" id="ccv" maxlength="3">
             </div>
             <input type="submit" value="submit">
         </form>
